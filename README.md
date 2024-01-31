@@ -8,3 +8,6 @@ To build the Docker image, navigate to the directory containing the Dockerfile a
 
 ```bash
 docker build -t exam .
+
+```wsl
+docker run -v $(pwd)/images:/app/images -v $(pwd)/output:/app/output exam images
